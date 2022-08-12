@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-color: #2c0303;
+}
+.fondo{
+    background-image: url(https://fondosmil.com/fondo/3052.jpg);
+    background-size: cover;
+
+}
+.titulo {
+    color: #F5B205;
+    font-size: 40px;
+    font-style: none
+}
+.encabezado{
+
+}
+.inicio{
+    color: #F5B205;
+    font-size: 40px;
+    text-decoration:solid;
+}
+
+.section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+margin-top: 50px;
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+"myskills about"
+"contact blog";
+ }
+
+ .myskills{
+    background-color: #F5B205;
+    grid-area: myskills;
+ }
+.about{
+    background-color: aqua;
+    grid-area: about;
+}
+.contact{
+    background-color: bisque;
+    grid-area: contact;
+}
+.blog{
+    background-color: darkred;
+    grid-area: blog;
+}
+/* medida para tableta */
+@media screen and (max-width: 780px) {
+    .section{
+        opacity: 0.3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section > div {
+        flex: 1;
+     }
+
+     .section{
+        margin-top: 50px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "myskills about"
+        "contact blog";
+         }
+        
+         .myskills{
+            background-color: #F5B205;
+            grid-area: myskills;
+         }
+        .about{
+            background-color: aqua;
+            grid-area: about;
+        }
+        .contact{
+            background-color: bisque;
+            grid-area: contact;
+        }
+        .blog{
+            background-color: darkred;
+            grid-area: blog;
+     }
+}
+
+@media screen and (max-width: 480px) {
+
+    .section{
+        opacity: 0.3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section > div {
+        flex: 1;
+     }
+
+}
