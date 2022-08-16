@@ -5,7 +5,11 @@
 }
 .body {
     background-color: #2c0303;
+
 }
+.bodySkills,.bodyAbout,.bodyContact,.bodyBlog{
+    background-image: url(https://swisscyberinstitute.com/wp-content/uploads/2022/07/cybersecurity-soft-skills.jpg);
+    }
 .fondo{
     background-image: url(https://fondosmil.com/fondo/3052.jpg);
     background-size: cover;
@@ -14,15 +18,24 @@
 .titulo {
     color: #F5B205;
     font-size: 40px;
-    font-style: none
+    
 }
-.encabezado{
+
+.scroll{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+    bottom: 50%;
 
 }
 .inicio{
     color: #F5B205;
     font-size: 40px;
-    text-decoration:solid;
+    
+}
+.npc{
+    text-decoration:none;
 }
 
 .section > div {
@@ -30,6 +43,23 @@
     justify-content: center;
     align-items: center;
 }
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.img1{
+    background-image: url(https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNraWxsfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+}
+.img2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf5HCmGFB9VD_6fziQZkfgigqdHGrQdPZDkK45ucljp19spgNIekKd_i8FbvcIc9Gry2w&usqp=CAU);
+    background-size: 100vh ;
+}
+
 
 .section{
 margin-top: 50px;
@@ -42,21 +72,56 @@ grid-template-areas:
 "contact blog";
  }
 
+ .cuadroDeTexto{
+    height: 50vh;
+    background-color: aliceblue;
+    margin-top: 30px;
+    opacity: 0.2;
+    overflow: scroll;
+ }
+ .li{
+    background-color: #e4bbbb;
+
+ }
+
+ .grid{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+ }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5B205;
+    margin-top: 50px;
+}
+
  .myskills{
-    background-color: #F5B205;
+    text-decoration: none;
+    color: #F5B205;
+    background-color: #5c0202;
     grid-area: myskills;
+    opacity: 0.8;
+    
  }
 .about{
-    background-color: aqua;
+    background-color: #5c0202;
     grid-area: about;
+    opacity: 0.8;
 }
 .contact{
-    background-color: bisque;
+    background-color: #5c0202;
     grid-area: contact;
+    opacity: 0.8;
 }
 .blog{
-    background-color: darkred;
+    background-color: #5c0202;
     grid-area: blog;
+    opacity: 0.8;
 }
 /* medida para tableta */
 @media screen and (max-width: 780px) {
@@ -96,8 +161,9 @@ grid-template-areas:
         .blog{
             background-color: darkred;
             grid-area: blog;
-     }
-}
+        }
+
+    }
 
 @media screen and (max-width: 480px) {
 
@@ -110,5 +176,30 @@ grid-template-areas:
     .section > div {
         flex: 1;
      }
+    .ul{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav{
+        
+        display: flex;
+        flex-direction: column;
+    }
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+.img1{
+    flex: 1;
+    margin: 10% 10% 10% 10% ;
+}
+.img2{
+    flex: 1;
+    margin:10% 10% 10% 10%;
+}
+
+        
 
 }
