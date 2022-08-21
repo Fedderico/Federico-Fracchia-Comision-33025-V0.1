@@ -4,46 +4,58 @@
     box-sizing: border-box;
 }
 .body {
-    background-color: #2c0303;
+    background: rgb(255,0,0);
+    background: linear-gradient(151deg, rgba(255,0,0,1) 0%, rgba(30,0,0,1) 50%, rgba(0,0,0,1) 100%);
     
 }
+
 .bodySkills,.bodyAbout,.bodyContact,.bodyBlog{
     background-image: url(https://swisscyberinstitute.com/wp-content/uploads/2022/07/cybersecurity-soft-skills.jpg);
     }
+
+
 .fondo{
     background-image: url(https://fondosmil.com/fondo/3052.jpg);
     background-size: cover;
 
 }
-.titulo {
-    color: #F5B205;
-    font-size: 40px;
-    
-}
+
 
 .scroll{
     display: flex;
     flex-direction:column;
     align-items: center;
     align-content: center;
-    bottom: 50%;
+    margin-top: 20%;
+    
+    }
+.npc {
+        text-decoration:none;
+        color: #F5B205;
+        font-size: 70px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+.slide-in-fwd-center{animation: slide-in-fwd-center .55s cubic-bezier(.10,.46,.45,.94) both}
+    
+     @keyframes slide-in-fwd-center{ 0% {transform:translateZ(-1400px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+.noblue{
+    text-decoration: none;
+    color: #F5B205;
+    font-size: 20px;
+}   
 
-}
+
 .inicio{
     color: #F5B205;
     font-size: 40px;
-    
+
 }
-.npc{
-    text-decoration:none;
-}
+
 
 .section > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 ul{
@@ -107,32 +119,27 @@ grid-template-areas:
     margin-top: 50px;
 }
 
- .myskills{
-    
+ .myskills,.none{
     text-decoration: none;
     color: #F5B205;
-    background-color: #5c0202;
     grid-area: myskills;
-    opacity: 0.8;
-    
- }
-.about{
-    background-color: #5c0202;
-    grid-area: about;
-    opacity: 0.8;
-    
-}
-.contact{
-    background-color: #5c0202;
-    grid-area: contact;
-    opacity: 0.8;
-}
-.blog{
-    background-color: #5c0202;
-    grid-area: blog;
-    opacity: 0.8;
-}
+    font-size: 40px
+    } 
+
+    /* animista */
+    .roll-in-top{animation:roll-in-top .6s ease-out both}
+    @keyframes roll-in-top{0%{transform:translateY(-800px) rotate(-540deg);opacity:0}100%{transform:translateY(0) rotate(0deg);opacity:1}}
+    .roll-in-bottom{animation:roll-in-bottom .6s ease-out both}
+    @keyframes roll-in-bottom{0%{transform:translateY(800px) rotate(540deg);opacity:0}100%{transform:translateY(0) rotate(0deg);opacity:1}}
+.about,.none{
+    grid-area: about;}
+.contact,.none{
+    grid-area: contact;}
+.blog,.none{
+    grid-area: blog;}
 /* medida para tableta */
+
+
 @media screen and (max-width: 780px) {
     .section{
         opacity: 0.3;
