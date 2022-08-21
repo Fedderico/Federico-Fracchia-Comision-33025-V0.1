@@ -45,11 +45,12 @@
 }   
 
 
-.inicio{
+.inicio,.titulo{
     color: #F5B205;
     font-size: 40px;
 
 }
+
 
 
 .section > div {
