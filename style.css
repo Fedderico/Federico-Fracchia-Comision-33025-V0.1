@@ -145,6 +145,31 @@ ul {
     gap: 10px;
 }
 
+/* caja de comentarios en contacto */
+.coment{
+    color: #F5B205;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+        }
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    }
+.col-6{
+    color: #F5B205;
+}
+.rowg-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 350px;
+}
 .footer {
     display: flex;
     justify-content: center;
