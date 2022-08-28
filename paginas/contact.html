@@ -11,49 +11,68 @@
 
     <title>My portfolio - Fedde</title>
 </head>
-<header>
-    <h1 class="titulo">Contact</h1>
-</header>
 <body class="bodyContact">
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark osc mt-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../immg/logo.jpg" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./myskills.html">Hablidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+<section class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+        <h4 class="txt">Informacion de Contacto:</h4>
+        <div class="card" style="width: 20rem;">
+            <img src="../immg/img1.jpg" class="card-img-top" alt="imagen1">
+            <div class="card-body bg-dark txt">
+              <h5 class="card-title">Contactenos</h5>
+              <p class="card-text">Tel: 3415415242
+              </p>
+              <a href="./inicio.html" class="btn btn-primary">volver al incio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+        <h4 class="txt">Envianos un mensaje:</h4>
+        <form></form>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label txt">Email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingresa tu mail...">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label txt">Comentario:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9" placeholder="Comentario:"></textarea>
+          </div>
+          <button class="btn-primary txt bg-black" id="exampleFormControlTextarea1">
+            enviar
+          </button>
+        </form>
 
-    <nav>
-        <ul>
-          <li> <a class="noblue" href="../paginas/inicio.html"> inicio</a></li>
-          <li> <a class="noblue" href="../paginas/myskills.html">My Skills</a></li>
-          <li> <a class="noblue" href="../paginas/about.html">About</a></li>
-          <li> <a class="noblue" href="../paginas/blog.html">Blog</a></li>
-        </ul>
-      </nav>
-
-<div class="cuadroDeTexto">
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ullam neque veniam blanditiis ab velit natus odit
-        doloribus voluptatibus iste voluptas quibusdam, eius, dolores totam sequi, quidem eum minima quas!
-    </p>
-</div>
-
-    <div class="coment">
-        <h2>
-            Alguna duda?
-        </h2>
     </div>
-</div>
-
-<div class="txt">
-<form class="row g-3">
-<div class="col-6">
-    <label for="emailImput" class="form-label" class="email" >Email:</label>
-    <input type="email" class="form-control" id="emailImput" placeholder="Forexample@...">
-</div>
-
-<div class="cajaDeTexto">
-    <textarea name="cajaDeComentarios" id="" cols="30" rows="10" placeholder="comentarios"></textarea>
-    </div>
-<div class="col-4">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</div>
-</form>
-</div>
+</section> 
 
 
 
