@@ -1,0 +1,32 @@
+.bodyContact{
+        background-image: url(https://swisscyberinstitute.com/wp-content/uploads/2022/07/cybersecurity-soft-skills.jpg);
+    
+        .navbar {
+            padding: 1fr;
+
+            .logo {
+                @include tamañoLogo (100px, 100px);
+            }
+              
+        }
+.opacity{
+     @extend %navbar;
+    }  
+
+.container1 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        
+    "grid1 grid2"
+    "grid3 grid4";
+    
+    gap: 30px;
+}
+
+.txt{
+   color: $colortext;
+    }
+}

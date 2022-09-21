@@ -1,0 +1,66 @@
+.fondo {
+    background-image: url(https://fondosmil.com/fondo/3052.jpg);
+    background-size: cover;
+  .navbar {
+        padding: 1fr;
+
+     .logo {
+          @include tamañoLogo (100px, 100px);
+        }
+    }
+
+.opacity {
+        @extend %navbar;
+}
+
+    .saludos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:1rem;
+        overflow: hidden;
+
+        //aplicando extend
+        
+        @extend .cuadroDeTexto;
+
+        .hi1{            
+            font-size: 20px;
+            color: $colortext;
+            border-right: .15em solid $colortext;
+            animation: blink 1s steps(1) infinite;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 6s steps(106) 1s 1 normal both, blink 1s steps(1) infinite;
+        }
+        .hi2{
+            font-size: 20px;
+            color: $colortext;
+            border-right: .15em solid $colortext;
+            animation: blink 1s steps(1) infinite;
+            width: 0;
+            overflow:hidden;
+            white-space: nowrap;
+            animation: typing 10s steps(116) 1s 1 normal both, blink 1s steps(1) infinite;
+            animation-delay: 6s;
+         }        
+    }
+}
+
+//keyframe de hi1 y hi2
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
