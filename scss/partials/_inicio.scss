@@ -23,44 +23,47 @@
 
         //aplicando extend
         
-        @extend .cuadroDeTexto;
-
-        .hi1{            
-            font-size: 20px;
-            color: $colortext;
-            border-right: .15em solid $colortext;
-            animation: blink 1s steps(1) infinite;
-            width: 0;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 6s steps(106) 1s 1 normal both, blink 1s steps(1) infinite;
-        }
-        .hi2{
-            font-size: 20px;
-            color: $colortext;
-            border-right: .15em solid $colortext;
-            animation: blink 1s steps(1) infinite;
-            width: 0;
-            overflow:hidden;
-            white-space: nowrap;
-            animation: typing 10s steps(116) 1s 1 normal both, blink 1s steps(1) infinite;
-            animation-delay: 6s;
-         }        
+        @extend .cuadroDeTexto;          
     }
+    
+
+
+}
+.txt{
+      margin-top: 50px;
+      margin-left: 0px;
+      color: $colortext;
+      display:flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: max-content;
+      font-size: 40px;
+    }
+    .pages{
+      margin-top: 50px;
+      height:800px;
+      display: grid;
+      gap:50px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;   
+      grid-template-areas: 
+
+      "iframe1 iframe2";
+
+ }
+
+ .iframe1{
+  margin-left: 10px;
+  border-radius: 50px;
+
+  @extend %animacion;
 }
 
-//keyframe de hi1 y hi2
-@keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+ .iframe2{
+ 
+  margin-right: 10px;
+  border-radius: 50px;
+  @extend %animacion2;
 
+  }
+ 
