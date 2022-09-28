@@ -1,34 +1,32 @@
 .fondo {
     background-image: url(https://fondosmil.com/fondo/3052.jpg);
     background-size: cover;
-  .navbar {
-        padding: 1fr;
+      .navbar {
+          padding: 1fr;
 
-     .logo {
-          @include tamañoLogo (100px, 100px);
-        }
-    }
+              .logo {
+                  @include tamañoLogo (100px, 100px);
+                }
+            }
 
 .opacity {
-        @extend %navbar;
-}
+     @extend %navbar;
+    }
 
-    .saludos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin:1rem;
-        overflow: hidden;
+.saludos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;
+    overflow: hidden;
 
         //aplicando extend
         
         @extend .cuadroDeTexto;          
     }
-    
-
-
 }
+
 .txt{
       margin-top: 50px;
       margin-left: 0px;
@@ -38,32 +36,40 @@
       justify-content: flex-start;
       height: max-content;
       font-size: 40px;
-    }
-    .pages{
-      margin-top: 50px;
-      height:800px;
-      display: grid;
-      gap:50px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;   
-      grid-template-areas: 
+      }
 
-      "iframe1 iframe2";
+      .cartas{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding: 0% 20% 0% 20% ;
+        gap:1rem;
+       
 
- }
+      }
 
- .iframe1{
-  margin-left: 10px;
-  border-radius: 50px;
+      .card{
+        background-color: black;
+        color: $colortext;
+        border-radius: 10px;
+        border: $colortext solid 1px;
 
-  @extend %animacion;
-}
+         .card-img-top{
+          border-radius: 10px;
+          }
+        }
 
- .iframe2{
- 
-  margin-right: 10px;
-  border-radius: 50px;
-  @extend %animacion2;
+      @media (max-width: 624px){
+          .cartas{
+          flex-direction: column;
+          margin-top: 30px;
+               .card{
+                margin-top: 30px;
+               }
+          }
 
-  }
- 
+      }  
+        
+    
+    
