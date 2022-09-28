@@ -17,8 +17,14 @@
 .cuadroDeTexto {
     @extend .cuadroDeTexto;
     overflow: scroll;
+    border: #ffb700 solid 1px;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    height: 500px;
         
     &txt {
             color: $colortext;
     }
+    
 }
